@@ -1,5 +1,6 @@
-# Laravel Study Group API
+# Laravel API
 
+Tugas study grup Chevalier Lab
 REST API sederhana menggunakan Laravel dengan fitur JWT Authentication, CRUD Product, dan Relational Model.
 
 ## Tech Stack
@@ -98,8 +99,8 @@ Body:
 
 ```json
 {
-  "name": "Anugrah",
-  "email": "anugrah@gmail.com",
+  "name": "Abc",
+  "email": "abcde@email.com",
   "password": "password123",
   "password_confirmation": "password123"
 }
@@ -117,7 +118,7 @@ Body:
 
 ```json
 {
-  "email": "anugrah@gmail.com",
+  "email": "abcde@email.com",
   "password": "password123"
 }
 ```
