@@ -1,7 +1,6 @@
 # Laravel API
 
-Tugas study grup Chevalier Lab
-REST API sederhana menggunakan Laravel dengan fitur JWT Authentication, CRUD Product, dan Relational Model.
+Tugas study grup Chevalier Lab yang mengimplementasikan REST API sederhana menggunakan Laravel dengan fitur JWT Authentication, CRUD Product, dan Relational Model.
 
 ## Tech Stack
 
