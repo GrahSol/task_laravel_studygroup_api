@@ -16,7 +16,7 @@ REST API sederhana menggunakan Laravel dengan fitur JWT Authentication, CRUD Pro
 ## 1. Clone Repository
 
 ```bash
-git clone <LINK_REPOSITORY>
+git clone <link repo>
 cd laravel-studygroup-api
 ```
 
@@ -36,6 +36,12 @@ composer install
 cp .env.example .env
 php artisan key:generate
 php artisan jwt:secret
+```
+
+Jika terjadi error terkait file `Controller.php`, pastikan struktur folder controller berada pada:
+
+```text
+app/Http/Controllers/
 ```
 
 ---
@@ -72,7 +78,7 @@ php artisan migrate
 php artisan serve
 ```
 
-Server:
+Server berjalan pada:
 
 ```text
 http://127.0.0.1:8000
@@ -94,7 +100,8 @@ Body:
 {
   "name": "Anugrah",
   "email": "anugrah@gmail.com",
-  "password": "abcde123"
+  "password": "password123",
+  "password_confirmation": "password123"
 }
 ```
 
@@ -111,7 +118,7 @@ Body:
 ```json
 {
   "email": "anugrah@gmail.com",
-  "password": "abcde123"
+  "password": "password123"
 }
 ```
 
@@ -127,7 +134,17 @@ Body:
 | PUT | /api/products/{id} |
 | DELETE | /api/products/{id} |
 
-Protected menggunakan JWT Bearer Token.
+Endpoint product menggunakan JWT Bearer Token.
+
+---
+
+# Category Endpoint
+
+| Method | Endpoint | Deskripsi |
+|---|---|---|
+| GET | /api/categories | Ambil semua kategori |
+| POST | /api/categories | Tambah kategori baru |
+| DELETE | /api/categories/{id} | Hapus kategori |
 
 ---
 
@@ -144,3 +161,13 @@ Product::with('category')
 
 ---
 
+# Fitur
+
+- JWT Authentication
+- CRUD Product
+- Validation Request
+- Protected Route
+- Relational Model
+- Eager Loading
+- Pagination & Search
+- JSON Response API
